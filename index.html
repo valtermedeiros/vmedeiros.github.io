@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VMFolio</title>
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    
+    <div class="p-fixed" style="cursor: pointer; right: 1em; top:1em; z-index: 999">
+        <a id="audio-controller" class="link"><i class="fa-solid fa-volume-xmark"></i></a>
+    </div>
+
+    <div style="padding: 1em; color:white; mix-blend-mode: color-dodge; z-index: 2; border-radius: 50%;" class="p-fixed audio-level">
+       
+    </div>
 
     <div class="section-progress-back"></div>
     <div class="section-progress-front"></div>
@@ -37,7 +44,7 @@
         
         <div class="section-description">
             <h1 class="">Importância a UI/UX</h1>
-            <p class="">
+            <p style="font-weight: 100;" class="">
                 Nos meus trabalhos, dou muita importância às questões de UI/UX (interfaces de utilizador e experiência do utilizador) para melhorar a experiência de utilização. 
             </p>
         </div>
@@ -46,7 +53,7 @@
     <section class="fullpage bg-black">
         <div class="section-description">
             <h1 class="">NOVAS TECNOLOGIAS</h1>
-            <p class="">
+            <p style="font-weight: 100;" class="">
                 Sou uma pessoa que gosta de optimizar o meu fluxo de trabalho através de adquirindo novas tecnologias e metodologias relacionadas com tecnologias de informação e novas ferramentas de criação de conteúdos gráficos. 
             </p>
         </div>
@@ -55,7 +62,7 @@
     <section class="fullpage bg-black">
         <div class="section-description">
             <h1 class="">No passado</h1>
-            <p class="">
+            <p style="font-weight: 100;" class="">
                 Já desenvolvi softwares para computadores, aplicativos móveis, videojogos, experiências interactivas imersivas (para óculos de realidade virtual, dispositivos móveis e computadores), sistemas de gerenciamento de conteúdo (CMSs), ferramentas de web para visualização de dados, sistemas de som interativo, planeamento de projetos informáticos.
             </p>
         </div>
@@ -64,23 +71,23 @@
     <section class="fullpage bg-black">
         <div class="section-description">
             <h1 class="">Habilidades</h1>
-            <p class="">
-                <br><br><span class="skill"> Interfaces de utilizador e experiência do utilizador (UI/UX);</span>
-                <br><br><span class="skill"> Esquema e formatação de páginas para revistas, livros, artigos, jornais e outros (Indesign ou aplicativos da web artesanais);</span>
-                <br><br><span class="skill"> Rastreamento e reconhecimento de imagens: desenvolvimento de algoritmos para análise de imagens direcionadas a um caso de uso específico;</span>
-                <br><br><span class="skill"> Gestão de bases de dados (organização de dados, criação manual de sistemas de gestão de conteúdos, linguagens Python & R);</span>
-                <br><br><span class="skill"> Visualização de dados: criação de ferramentas de visualização de dados para a web e para os diferentes sistema operacionais, possibilitando a sua leitura de forma interactiva para facilitar a sua análise;</span>
-                <br><br><span class="skill"> Processamento e tratamento de dados: criação e utilização de ferramentas capazes de todos os tipos de tratamento de dados;</span>
-                <br><br><span class="skill"> Desenvolvimento para a web (HTML, CSS, Javascript, ReactJS/VueJS, PHP);</span>
-                <br><br><span class="skill"> Desenvolvimento de apps para dispositivos móveis (Microsoft Xamarin/Unity/C#);</span>
-                <br><br><span class="skill"> Desenvolvimento de softwares específicos para sistemas operacionais Windows, Mac OS e Linux;</span>
-                <br><br><span class="skill"> Prototipagem eletrónica: desenvolvimento de componentes eletrónicas capazes de interagir com o mundo fisico; Desenvolver funcionalidades para placas de Arduino e Raspberry Pi;</span>
-                <br><br><span class="skill"> Criação de gráficos digitais bi-dimensionais e arte (processamento de imagem, imagens vetoriais, animações de vídeo 2D);</span>
-                <br><br><span class="skill"> Criação de modelos digitais tridimensionais (modelação & animação 3D, mapeamento e texturização);</span>
-                <br><br><span class="skill"> Criação de experiências interativas através de imagens e de vídeos 360º (visitas virtuais), experiências de realidade virtual totalmente interativas que visam tecnologias recentes como óculos de realidade virtual (RV) e realidade aumentada (RA) para dispositivos móveis e computadores;</span>
-                <br><br><span class="skill"> Design de som: criando áudio para todos os tipos de aplicações utilizando as mais recentes tecnologias (efeito surround 7.1 e superior, ferramentas de audio interativo, processamento de som simples e complexo, fluxos de trabalho de som);</span>
-                <br><br><span class="skill"> Edição de video (Adobe Premier) e criação de efeitos visuais (After Effects) e manipulação de imagem (Adobe Photoshop);</span>
-                <br><br><span class="skill"> Sistemas de informação geográfica (SIG): Tratamento de dados para ArcGIS e qGIS.</span>
+            <p style="font-weight: 100; " class="">
+                <span class="skill"> Interfaces de utilizador e experiência do utilizador (UI/UX);</span>
+                <br><span class="skill"> Esquema e formatação de páginas para revistas, livros, artigos, jornais e outros (Indesign ou aplicativos da web artesanais);</span>
+                <br><span class="skill"> Rastreamento e reconhecimento de imagens: desenvolvimento de algoritmos para análise de imagens direcionadas a um caso de uso específico;</span>
+                <br><span class="skill"> Gestão de bases de dados (organização de dados, criação manual de sistemas de gestão de conteúdos, linguagens Python & R);</span>
+                <br><span class="skill"> Visualização de dados: criação de ferramentas de visualização de dados para a web e para os diferentes sistema operacionais, possibilitando a sua leitura de forma interactiva para facilitar a sua análise;</span>
+                <br><span class="skill"> Processamento e tratamento de dados: criação e utilização de ferramentas capazes de todos os tipos de tratamento de dados;</span>
+                <br><span class="skill"> Desenvolvimento para a web (HTML, CSS, Javascript, ReactJS/VueJS, PHP);</span>
+                <br><span class="skill"> Desenvolvimento de apps para dispositivos móveis (Microsoft Xamarin/Unity/C#);</span>
+                <br><span class="skill"> Desenvolvimento de softwares específicos para sistemas operacionais Windows, Mac OS e Linux;</span>
+                <br><span class="skill"> Prototipagem eletrónica: desenvolvimento de componentes eletrónicas capazes de interagir com o mundo fisico; Desenvolver funcionalidades para placas de Arduino e Raspberry Pi;</span>
+                <br><span class="skill"> Criação de gráficos digitais bi-dimensionais e arte (processamento de imagem, imagens vetoriais, animações de vídeo 2D);</span>
+                <br><span class="skill"> Criação de modelos digitais tridimensionais (modelação & animação 3D, mapeamento e texturização);</span>
+                <br><span class="skill"> Criação de experiências interativas através de imagens e de vídeos 360º (visitas virtuais), experiências de realidade virtual totalmente interativas que visam tecnologias recentes como óculos de realidade virtual (RV) e realidade aumentada (RA) para dispositivos móveis e computadores;</span>
+                <br><span class="skill"> Design de som: criando áudio para todos os tipos de aplicações utilizando as mais recentes tecnologias (efeito surround 7.1 e superior, ferramentas de audio interativo, processamento de som simples e complexo, fluxos de trabalho de som);</span>
+                <br><span class="skill"> Edição de video (Adobe Premier) e criação de efeitos visuais (After Effects) e manipulação de imagem (Adobe Photoshop);</span>
+                <br><span class="skill"> Sistemas de informação geográfica (SIG): Tratamento de dados para ArcGIS e qGIS.</span>
             </p>
         </div>
     </section>
@@ -89,13 +96,13 @@
     
 
     <section class="fullpage bg-black">
-        <div style="margin-top: 50%" class="section-description">
+        <div style="padding-top: 10%; padding-bottom: 10%; margin-top: 50%" class="section-description">
             <h1 class="">Entra em contato</h1>
             <br>
-            <a class="link" target="_blank" href="mailto:valumlab@gmail.com">Email</a>
-            <a class="link" target="_blank" href="mailto:valumlab@gmail.com?subject=Acesso ao seu CV - vmedeiros.net">Pedir CV</a>
-            <a class="link" target="_blank" href="https://github.com/valtermedeiros">Github</a>
-            <a class="link" target="_blank" href="https://sketchfab.com/valumlab">Sketchfab</a>
+            <a class="link" target="_blank" href="mailto:valumlab@gmail.com"><i class="fa-solid fa-at"></i> Email</a>
+            <a class="link" target="_blank" href="mailto:valumlab@gmail.com?subject=Acesso ao seu CV - vmedeiros.net"><i class="fa-regular fa-file-pdf"></i> Pedir CV</a>
+            <a class="link" target="_blank" href="https://github.com/valtermedeiros"><i class="fa-brands fa-github"></i> Github</a>
+            <a class="link" target="_blank" href="https://sketchfab.com/valumlab"><i class="fa-solid fa-cubes"></i> Sketchfab</a>
         </div>
     </section>
 
@@ -104,7 +111,7 @@
     </section> -->
 
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.39/Tone.js" integrity="sha512-Zu1QIDG6ZacL9zSX9Ynyvdp45DP/FDTX40ci1RakZ6qvonbA+foQleFvqwa2lnsCE01P5QyXkj662EAwDFhrTw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
 
@@ -128,6 +135,7 @@
     <script>
 
         const scroller = document.getElementById('section-one');
+        
 
         /* function getOffset(el) {
             const rect = document.querySelector(el).getBoundingClientRect();
@@ -201,6 +209,80 @@
         });
         
     </script>
+
+
+    <script>
+        
+
+
+        const player = new Tone.Player("audio/2.wav").toDestination();
+        player.autostart = true;
+        player.loop = true;
+
+        const filter = new Tone.AutoFilter(4).start();
+        const distortion = new Tone.Reverb(0.5);
+        // connect the player to the filter, distortion and then to the master output
+        player.chain(filter, distortion, Tone.Destination);
+
+
+        const meter = new Tone.Meter();
+        meter.smoothing = 0.5;
+        // connect mic to the meter
+        player.connect(meter);
+        // the current level of the mic
+        setInterval(function(){
+            let val = Math.abs(Tone.dbToGain(meter.getLevel()) * 10);
+
+            var animation_freeform = anime({
+                targets: '.audio-level',
+                scaleX: getScrollPercent() + val,
+                scaleY: getScrollPercent()+ val,
+                backgroundColor: ['#222222'],
+                //delay: function (el, i) { return i * 100; },
+                delay:0,
+                /* easing: 'linear', */
+                elasticity: 100,
+                autoplay: true
+            });
+
+
+            console.log(val);
+        }, 100);
+
+        //filter.frequency.rampTo(1000, 10);
+        //const noise = new Tone.Noise().connect(filter).start();
+
+
+
+        /* window.addEventListener('scroll', () => {
+            console.log("Scroll is... " + getScrollPercent() );
+            filter.frequency.rampTo(getScrollPercent() * 1, 0);
+        }); */
+
+
+        var audioEnabled = false;
+
+        document.getElementById("audio-controller").addEventListener("click", function(){
+            
+            if(audioEnabled == false){
+                audioEnabled = true;
+                this.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+                
+                player.mute = false;
+                Tone.Transport.start()
+            }
+            else {
+                audioEnabled = false;
+                this.innerHTML = '<i class="fa-solid fa-volume-xmark"></>';
+                
+                player.mute = true;
+                Tone.Transport.stop();
+                //alert('audio currently muted...');
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
