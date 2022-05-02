@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Maven+Pro:wght@900&display=swap');
+
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    size: 100%;
+}
+
+/* Pre-made sections */
+
+section.fullpage {
+    height: 120vh;
+    width: 100vw;
+}
+
+/* skills */
+
+.skill::before {
+    content: " — ";
+    margin-right: 0.3em;
+}
+
+/* links  */
+
+.link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+
+    margin-right: 1em;
+}
+
+.link:hover {
+    color: #fff;
+}
+.link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.link:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* Text customization  */
+
+h1 { font-size: 3em; font-weight: 700; text-transform: uppercase;}
+
+
+/* SIZE, POSITION AND DISPLAY */
+
+.center-v {
+    margin-top: 50vh;
+    transform: translateY(-50vh);
+}
+
+.center-h {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-relative { position: relative; }
+.p-absolute { position: absolute; }
+.p-fixed { position: fixed; }
+
+/* COLORS */
+
+.bg-black {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: #222;
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: rgb(35, 81, 134);
+}
+
+.bg-green {
+    color: #fff;
+    background-color: rgb(35, 134, 93);
+}
+
+.bg-red {
+    color: #fff;
+    background-color: rgb(134, 35, 35);
+}
+
+
+
+/* CUSTOM PROPS */
+
+.section-description {
+    width: 50%;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    
+}
+
+.section-progress-back {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 7px;
+    background-color: #22222220;
+}
+
+.section-progress-front {
+
+    /* mix-blend-mode: color-dodge; */
+
+    position: fixed;
+
+    left:0;
+    bottom: 0;
+
+    width: 0;
+    height: 100vh;
+
+    background-color: red;
+}
+
+.free-form {
+
+    /* mix-blend-mode: color-dodge; */
+
+    position: fixed;
+
+    left:50%;
+    bottom: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: rgb(0, 17, 255);
+}
